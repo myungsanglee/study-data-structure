@@ -1,7 +1,7 @@
 // 세 정수의 최댓값을 구하는 프로그램
 #include <stdio.h>
 
-// a, b, c의 최댓값을 구합니다.
+// a, b, c의 최댓값을 구합니다
 int max3(int a, int b, int c)
 {
     int max = a;
