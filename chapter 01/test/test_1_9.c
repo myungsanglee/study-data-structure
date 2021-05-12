@@ -13,8 +13,7 @@ int main(void)
     int a, b;
     puts("정수 a, b를 선택하세요.");
     printf("a: ");
-    int c = scanf("%d", &a);
-    printf("c: %d\n", c);
+    scanf("%d", &a);
     printf("b: ");
     scanf("%d", &b);
 
