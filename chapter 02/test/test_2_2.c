@@ -1,17 +1,17 @@
-// 키의 최솟값을 구하는 프로그램을 작성하세요
+// 키의 합계를 구하는 프로그램을 작성하세요
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h> 
 
-int minof(const int a[], int n)
+int sumof(const int a[], int n)
 {
     int i;
-    int min = a[0];
+    int sum = 0;
     for (i = 0; i < n; i++)
     {
-        if (a[i] < min) min = a[i];
+        sum += a[i];
     }
-    return min;
+    return sum;
 }
 
 int main(void)
@@ -31,7 +31,7 @@ int main(void)
         height[i] = 100 + rand() % 90;
         printf("height[%d]: %d\n", i, height[i]);
     }
-    printf("키의 최솟값은 %d 입니다.", minof(height, num));
+    printf("키의 합계는 %d 입니다.", sumof(height, num));
 
     return 0;
 }

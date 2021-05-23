@@ -1,17 +1,20 @@
-// 키의 최솟값을 구하는 프로그램을 작성하세요
+// 키의 평균을 구하는 프로그램을 작성하세요
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h> 
 
-int minof(const int a[], int n)
+double aveof(const int a[], int n)
 {
     int i;
-    int min = a[0];
+    double avg;
+    double sum = 0;
     for (i = 0; i < n; i++)
     {
-        if (a[i] < min) min = a[i];
+        sum += (double)a[i];
     }
-    return min;
+    avg = (sum / (double)n);
+    
+    return avg;
 }
 
 int main(void)
@@ -31,7 +34,7 @@ int main(void)
         height[i] = 100 + rand() % 90;
         printf("height[%d]: %d\n", i, height[i]);
     }
-    printf("키의 최솟값은 %d 입니다.", minof(height, num));
+    printf("키의 평균은 %.2f 입니다.", aveof(height, num));
 
     return 0;
 }
