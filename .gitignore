@@ -2,3 +2,4 @@
 .vscode/
 # ignore file
 *.exe
+build/
