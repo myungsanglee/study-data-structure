@@ -42,6 +42,8 @@ int IsFull(const IntQueue *q);
 /* 큐에서 검색 */
 int Search(const IntQueue *q, int x);
 
+int Search2(const IntQueue *q, int x);
+
 /* 모든 데이터 출력 */
 void Print(const IntQueue *q);
 
