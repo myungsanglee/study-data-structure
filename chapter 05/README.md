@@ -6,8 +6,8 @@
 * 유클리드 호제법(Euclidean method of mutual division)
     + 두 정수의 최대공약수(greatest common divisor)를 재귀적으로 구하는 방법
     + A를 B로 나눈 몫을 Q라 하고, 나머지를 R이라 하자. 이 때, gcd(A, B) = gcd(B, R)이다.
-* 
-    + 
+* 재귀 알고리즘의 분석
+    + 하향식 분석(top-down analysis), 상향식 분석(bottom-up analysis)
 * 
     + 
 * 
